@@ -1,0 +1,5 @@
+Buat kedalam 1 mini program yg berisikan implementasi algoritma berikut
+- Rabin-Karp algorithm
+- naive algorithm
+- optimized naive algorithm
+- finite automata algorithm
