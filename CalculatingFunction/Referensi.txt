@@ -1,0 +1,1 @@
+https://github.com/jackiehluo/practice/blob/master/codeforces/400s/486a-calculating-function.cpp
