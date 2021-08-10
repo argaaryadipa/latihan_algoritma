@@ -29,14 +29,20 @@ include "function.php";
                     <div class="col-lg-5">
                         <form method="post" action="">
             
-                            <input type="text" name="input">
+                            <input type="text" name="input" class="mb-2">
+                            <br>
+                            <input type="text" name="input2" class="mb-2">
+                            <br>
                             <button class="btn btn-primary" name="proses" type="submit">Proses</button>
         
                         </form>
 
                         <h2>
                             <?php
-                            
+                                foreach ($muncul as $mun) {
+
+                                    echo $mun;
+                                }
                             ?>
                         </h2>
 

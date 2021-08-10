@@ -1,14 +1,34 @@
 <?php 
 
-$muncul = "";
+$muncul[] = "";
+
 
 if(isset($_POST['proses'])) {
-    for ($i=1; $i <= 1 ; $i++) { 
-        for ($j=1; $j <= 1 ; $j++) { 
-            if(($i % 2) != 0) {
-                $muncul = "#";
+    $n = $_POST['input'];
+    $m = $_POST['input2'];
+
+    for ($i=1; $i <= $n ; $i++) { 
+
+        for ($j=1; $j <= $m ; $j++) { 
+
+            if($i % 2) {
+                $muncul[] = "#";
+            } else if($i % 4 == 0) {
+                if($j == 1) {
+                    $muncul[] = "#";
+                } else {
+                    $muncul[] = ".";
+                }
+            } else {
+                if($j == $m) {
+                    $muncul[] = "#";
+                } else {
+                    $muncul[] = ".";
+                }
             }
+
         }
+        $muncul[] = "<br>";
     }
 }
 
